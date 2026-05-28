@@ -1,0 +1,138 @@
+############################################################
+# .dockerignore pronto para produção para uma aplicação Next.js (estilo Vercel)
+# Mantém os builds Docker rápidos, enxutos e livres de arquivos de desenvolvimento.
+############################################################
+
+# Dependências (instaladas dentro do Docker, nunca copiadas)
+node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Saídas de build do Next.js (sempre geradas durante `next build`)
+.next/
+out/
+dist/
+build/
+.vercel/
+
+# Testes e saídas de teste (não necessários em imagens de produção)
+coverage/
+.nyc_output/
+__tests__/
+__mocks__/
+jest/
+cypress/
+cypress/screenshots/
+cypress/videos/
+playwright-report/
+test-results/
+.vitest/
+vitest.config.*
+jest.config.*
+cypress.config.*
+playwright.config.*
+*.test.*
+*.spec.*
+
+# Arquivos de desenvolvimento local e de editor
+.git/
+.gitignore
+.gitattributes
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.log
+
+# Variáveis de ambiente (apenas arquivos modelo devem ser commitados)
+.env
+.env*.local
+.env.development
+.env.test
+.env.production.local
+
+# Arquivos de configuração do Docker (não necessários no contexto de build)
+Dockerfile*
+.dockerignore
+compose.yaml
+compose.yml
+docker-compose*.yaml
+docker-compose*.yml
+
+# Documentação
+*.md
+docs/
+
+# Arquivos de configuração de CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+Jenkinsfile
+
+# Diretórios de cache e dados temporários
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.swc/
+.turbo/
+.tmp/
+.temp/
+
+# Metadados de build do TypeScript
+*.tsbuildinfo
+
+# Arquivos de configuração sensíveis ou desnecessários
+*.pem
+.editorconfig
+.prettierrc*
+prettier.config.*
+.eslintrc*
+eslint.config.*
+.stylelintrc*
+stylelint.config.*
+.babelrc*
+*.iml
+*.ipr
+*.iws
+
+# Lixo específico de sistema operacional
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Metadados e configurações de ferramentas de IA/ML
+.cursor/
+.cursorrules
+.copilot/
+.copilotignore
+.github/copilot/
+.gemini/
+.anthropic/
+.kiro
+.claude
+AGENTS.md
+.agents/
+
+# Arquivos temporários gerados por IA
+*.aider*
+*.copilot*
+*.chatgpt*
+*.claude*
+*.gemini*
+*.openai*
+*.anthropic*
+
+# Pasta criadas por mim
+.anotacoes/
+supabase/

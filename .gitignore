@@ -1,6 +1,6 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Veja https://help.github.com/articles/ignoring-files/ para mais informações sobre como ignorar arquivos.
 
-# dependencies
+# dependências
 /node_modules
 /.pnp
 .pnp.*
@@ -10,27 +10,26 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# testes
 /coverage
 
 # next.js
 /.next/
 /out/
 
-# production
+# produção
 /build
 
-# misc
+# miscelânea
 .DS_Store
 *.pem
 
-# debug
+# depuração
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# arquivos de ambiente locais
 .env*
 
 # vercel
