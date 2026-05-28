@@ -1,0 +1,9 @@
+.agents/
+.claude/
+.next/
+out/
+build/
+coverage/
+node_modules/
+dist/
+.env
